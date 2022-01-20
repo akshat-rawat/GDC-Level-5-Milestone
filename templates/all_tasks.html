@@ -1,0 +1,17 @@
+<h1>Pending Tasks : </h1>
+<ol>
+    {% for task in all_tasks %}
+        {% if not task.completed %}
+            <li><b> {{ task }} </b></li>
+        {% endif %}
+    {% endfor %}
+</ol>
+
+<h1>Completed Tasks : </h1>
+<ol>
+    {% for task in all_tasks %}
+        {% if task.completed %}
+            <li><b> {{ task }} </b></li>
+        {% endif %}
+    {% endfor %}
+</ol>

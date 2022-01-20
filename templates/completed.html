@@ -1,0 +1,6 @@
+<h1>Completed Tasks :</h1>
+
+{% for task in completed %} 
+    {{forloop.counter}}.
+    <b style="font-size: 2rem"> {{task}} </b> <br />
+{% endfor %}
